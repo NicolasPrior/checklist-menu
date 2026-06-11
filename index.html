@@ -3,66 +3,116 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0f766e">
+    <meta name="theme-color" content="#0033a0">
     <meta
       name="description"
-      content="Portal de acesso aos checklists fotogr&aacute;ficos de granel e fracionado."
+      content="Portal Dulcini para acesso aos checklists fotograficos de granel e fracionado."
     >
-    <title>Portal de Checklists</title>
+    <title>Portal de Checklists | Dulcini</title>
+    <link rel="preload" href="./assets/dulcini-industria.jpg" as="image">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <main class="page-shell" aria-labelledby="page-title">
-      <section class="hero">
-        <div class="brand-bar" aria-label="Portal de checklists">
-          <span class="brand-mark" aria-hidden="true">PC</span>
-          <span>Portal de Checklists</span>
+    <main class="portal-shell" aria-labelledby="page-title">
+      <header class="portal-header" aria-label="Dulcini S/A">
+        <div class="brand-lockup">
+          <img class="brand-logo" src="./assets/dulcini-logo.png" alt="Dulcini">
+          <span class="brand-divider" aria-hidden="true"></span>
+          <span class="brand-context">Portal operacional</span>
         </div>
 
-        <div class="intro">
-          <p class="eyebrow">Checklist fotogr&aacute;fico operacional</p>
-          <h1 id="page-title">Qual checklist voc&ecirc; deseja acessar?</h1>
+        <div class="header-meta" aria-label="Contexto do portal">
+          <span>Checklists fotograficos</span>
+          <span>Granel e fracionado</span>
+        </div>
+      </header>
+
+      <section class="command-center">
+        <div class="hero-copy">
+          <p class="eyebrow">Dulcini S/A</p>
+          <h1 id="page-title">Escolha o checklist operacional.</h1>
           <p class="lead">
-            Escolha a opera&ccedil;&atilde;o para abrir o sistema correspondente.
+            Acesse o fluxo correto para registrar evidencias fotograficas com
+            padrao, rastreabilidade e consistencia no controle das operacoes.
           </p>
+
+          <div class="facility-visual" aria-label="Unidade industrial Dulcini">
+            <img src="./assets/dulcini-industria.jpg" alt="Vista da unidade industrial Dulcini">
+            <span class="visual-label">Ambiente corporativo Dulcini</span>
+          </div>
         </div>
+
+        <section class="operation-stack" aria-label="Acessos aos checklists">
+          <a
+            class="operation-card operation-card--bulk"
+            href="https://nicolasprior.github.io/checklist-granel/"
+            aria-label="Abrir checklist de granel"
+          >
+            <span class="operation-top">
+              <span class="operation-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" role="img">
+                  <path d="M10 23h30l9 10v15H10V23Z"></path>
+                  <path d="M40 25v10h11"></path>
+                  <path d="M18 49a5 5 0 1 0 10 0"></path>
+                  <path d="M43 49a5 5 0 1 0 10 0"></path>
+                  <path d="M18 31h13"></path>
+                </svg>
+              </span>
+              <span class="operation-meta">Operacao de carga</span>
+            </span>
+
+            <span class="operation-title">CheckList - Granel</span>
+            <span class="operation-copy">
+              Controle fotografico para expedicao, conferencia e registro das
+              etapas relacionadas ao fluxo de granel.
+            </span>
+            <span class="operation-action">
+              <span>Abrir checklist</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h12"></path>
+                <path d="m13 6 6 6-6 6"></path>
+              </svg>
+            </span>
+          </a>
+
+          <a
+            class="operation-card operation-card--fractioned"
+            href="https://nicolasprior.github.io/checklist-fracionado/"
+            aria-label="Abrir checklist de fracionado"
+          >
+            <span class="operation-top">
+              <span class="operation-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" role="img">
+                  <path d="M14 22h36v32H14V22Z"></path>
+                  <path d="M22 22v-8h20v8"></path>
+                  <path d="M23 32h18"></path>
+                  <path d="M23 41h18"></path>
+                  <path d="M23 50h10"></path>
+                </svg>
+              </span>
+              <span class="operation-meta">Operacao fracionada</span>
+            </span>
+
+            <span class="operation-title">CheckList - Fracionado</span>
+            <span class="operation-copy">
+              Controle fotografico para separacao, validacao e registro dos
+              pontos criticos do processo fracionado.
+            </span>
+            <span class="operation-action">
+              <span>Abrir checklist</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h12"></path>
+                <path d="m13 6 6 6-6 6"></path>
+              </svg>
+            </span>
+          </a>
+        </section>
       </section>
 
-      <section class="choice-grid" aria-label="Opcoes de checklist">
-        <a class="choice-card choice-card--bulk" href="https://nicolasprior.github.io/checklist-granel/">
-          <span class="choice-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64" role="img">
-              <path d="M10 22h31l9 10v17H10V22Z"></path>
-              <path d="M41 24v10h11"></path>
-              <path d="M18 49a5 5 0 1 0 10 0"></path>
-              <path d="M43 49a5 5 0 1 0 10 0"></path>
-              <path d="M18 31h13"></path>
-            </svg>
-          </span>
-          <span class="choice-content">
-            <span class="choice-title">CheckList - Granel</span>
-            <span class="choice-copy">Abrir checklist fotogr&aacute;fico para opera&ccedil;&otilde;es de granel.</span>
-          </span>
-          <span class="choice-action" aria-hidden="true">Acessar</span>
-        </a>
-
-        <a class="choice-card choice-card--fractioned" href="https://nicolasprior.github.io/checklist-fracionado/">
-          <span class="choice-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64" role="img">
-              <path d="M14 22h36v32H14V22Z"></path>
-              <path d="M22 22v-8h20v8"></path>
-              <path d="M23 32h18"></path>
-              <path d="M23 41h18"></path>
-              <path d="M23 50h10"></path>
-            </svg>
-          </span>
-          <span class="choice-content">
-            <span class="choice-title">CheckList - Fracionado</span>
-            <span class="choice-copy">Abrir checklist fotogr&aacute;fico para opera&ccedil;&otilde;es de fracionado.</span>
-          </span>
-          <span class="choice-action" aria-hidden="true">Acessar</span>
-        </a>
-      </section>
+      <footer class="portal-footer">
+        <span>Identidade visual alinhada ao ecossistema Dulcini.</span>
+        <span>Qualidade, controle e confianca operacional.</span>
+      </footer>
     </main>
   </body>
 </html>
