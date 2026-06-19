@@ -11,6 +11,10 @@
     <title>Portal de checklists | Dulcini S/A</title>
     <link rel="preload" href="./assets/dulcini-industria.jpg" as="image">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="icon-192.png">
   </head>
   <body>
     <main class="portal-shell" aria-labelledby="page-title">
@@ -114,5 +118,14 @@
         <span>Qualidade, controle e confiança operacional.</span>
       </footer>
     </main>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('sw.js').catch(function (e) {
+            console.warn('Falha ao registrar service worker:', e);
+          });
+        });
+      }
+    </script>
   </body>
 </html>
